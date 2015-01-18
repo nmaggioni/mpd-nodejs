@@ -1,0 +1,17 @@
+{
+  "name": "MPD_Controller",
+  "version": "0.0.0",
+  "private": "true",
+  "description": "MPD web controller interface",
+  "main": "MPDController.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nmaggioni",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.11.0",
+    "jade": "^1.9.1",
+    "mpd": "^1.2.0"
+  }
+}

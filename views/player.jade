@@ -1,0 +1,20 @@
+html
+  head
+    title="MPD Player"
+    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', rel='stylesheet')
+  body
+    div.container
+      div.jumbotron
+        h1 MPD Player Controller
+        form(action='/player', method='get')
+            input(name='cmd', value='play', type='hidden')
+            input(type='submit', value='Send PLAY command', class='btn btn-primary')
+        form(action='/player', method='get')
+            input(name='cmd', value='stop', type='hidden')
+            input(type='submit', value='Send STOP command', class='btn btn-primary')
+        form(action='/player', method='get')
+            input(name='cmd', value='prev', type='hidden')
+            input(type='submit', value='Send PREV command', class='btn btn-primary')
+        form(action='/player', method='get')
+            input(name='cmd', value='next', type='hidden')
+            input(type='submit', value='Send NEXT command', class='btn btn-primary')
