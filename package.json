@@ -5,13 +5,17 @@
   "description": "MPD web controller interface",
   "main": "MPDController.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "nmaggioni",
   "license": "MIT",
   "dependencies": {
     "express": "^4.11.0",
     "jade": "^1.9.1",
-    "mpd": "^1.2.0"
-  }
+    "mpd": "^1.2.0",
+    "snyk": "^1.19.1"
+  },
+  "snyk": true
 }
